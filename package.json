@@ -1,0 +1,37 @@
+{
+  "name": "craft_backend",
+  "version": "0.0.1",
+  "description": "Backnd for Craft fo you, using Medusa.",
+  "author": "Melusi Khumalo <melusi@addcolouragency.design>",
+  "license": "MIT",
+  "scripts": {
+    "seed": "medusa seed -f ./data/seed.json",
+    "build": "babel src -d dist --extensions \".ts,.js\"",
+    "start": "medusa develop"
+  },
+  "dependencies": {
+    "@medusajs/medusa": "^1.1.36",
+    "@medusajs/medusa-cli": "^1.1.22",
+    "medusa-fulfillment-manual": "^1.1.26",
+    "medusa-interfaces": "^1.1.27",
+    "medusa-payment-manual": "^1.0.8",
+    "medusa-payment-stripe": "^1.1.30",
+    "mongoose": "^5.13.3",
+    "typeorm": "^0.2.36"
+  },
+  "repository": "https://github.com/medusajs/medusa-starter-default.git",
+  "keywords": [
+    "sqlite",
+    "ecommerce",
+    "headless",
+    "medusa",
+    "craft"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-typescript": "^7.14.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-medusa-package": "^1.1.13"
+  }
+}
